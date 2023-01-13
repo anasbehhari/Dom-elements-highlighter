@@ -24,6 +24,7 @@ const ReloadColors = () => {
     const button = document.createElement("button");
     button.style.backgroundColor = color;
     button.addEventListener("click", function () {
+      Hexcode.value=""
       selectColor(this);
     });
     colorContainer.appendChild(button);
@@ -56,6 +57,7 @@ const createColorButtons = () => {
     const button = document.createElement("button");
     button.style.backgroundColor = color;
     button.addEventListener("click", function () {
+      Hexcode.value=""
       selectColor(this);
     });
     colorContainer.appendChild(button);
