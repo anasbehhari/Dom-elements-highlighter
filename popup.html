@@ -1,0 +1,157 @@
+<!-- popup.html -->
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  body {
+    width: 300px;
+    height: fit-content;
+    font-family: monospace;
+  }
+  body .container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  body .container .content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  body .container .header .cn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  body .container .header img {
+    width: 20px;
+  }
+  body .container .header div {
+    position: relative;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  body .container .header p {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+  body .container .header p b {
+    background-color: gainsboro;
+    padding: 1px;
+    font-style: italic;
+  }
+  body .container .content .txt {
+    margin-top: 20px;
+  }
+  body .container .content #color-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  body .container .content #color-container button {
+    position: relative;
+    padding: 10px 0;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    width: calc(100% / 6);
+  }
+  body .container .content #color-container button.selected {
+    border-color: black;
+  }
+  body .container .content .txt {
+    background-color: gainsboro;
+    padding: 2px;
+    width: fit-content;
+    position: relative;
+  }
+  body .container .content .txt #reload-colors-btn {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 105%;
+    top: -5%;
+    cursor: pointer;
+  }
+  body .container .content input {
+    padding: 8px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(224, 224, 224);
+    border-radius: 4px;
+    outline: none;
+  }
+
+  body .container .content input:focus {
+    border: 2px solid rgb(190, 189, 189);
+    outline: none;
+  }
+  body .container .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 30px;
+  }
+  body .container .buttons button {
+    position: relative;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  body .container .buttons button:first-of-type {
+    background-color: #4caf50;
+  }
+  body .container .buttons button:last-of-type {
+    background-color: #f44336;
+  }
+  body .container .buttons button:hover {
+    opacity: 0.8;
+  }
+</style>
+<div class="container">
+  <div class="header">
+    <div class="cn">
+      <img src="icons/logo.png" alt="" />
+      <div>Dom elements highlighter</div>
+    </div>
+    <p>
+      *is a web extension that allows the user to outline all the elements of
+      the web view <br />
+    </p>
+    <p>
+      <b
+        >(it helps to show the designer or the web developer to explore and see
+        how things are desgined and builed.)</b
+      >
+    </p>
+  </div>
+  <div class="content">
+    <div class="txt">
+      `choose a color`
+      <svg
+        id="reload-colors-btn"
+        fill="#000000"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1,12A11,11,0,0,1,17.882,2.7l1.411-1.41A1,1,0,0,1,21,2V6a1,1,0,0,1-1,1H16a1,1,0,0,1-.707-1.707l1.128-1.128A8.994,8.994,0,0,0,3,12a1,1,0,0,1-2,0Zm21-1a1,1,0,0,0-1,1,9.01,9.01,0,0,1-9,9,8.9,8.9,0,0,1-4.42-1.166l1.127-1.127A1,1,0,0,0,8,17H4a1,1,0,0,0-1,1v4a1,1,0,0,0,.617.924A.987.987,0,0,0,4,23a1,1,0,0,0,.707-.293L6.118,21.3A10.891,10.891,0,0,0,12,23,11.013,11.013,0,0,0,23,12,1,1,0,0,0,22,11Z"
+        />
+      </svg>
+    </div>
+
+    <div id="color-container"></div>
+    <div class="txt">`or`</div>
+    <input type="text" id="hex-code" placeholder="exp :#000000" />
+  </div>
+  <div class="buttons">
+    <button id="inject-code-btn" style="border: none !important">
+      Add outline
+    </button>
+    <button id="remove-CSS-Btn">Remove the `Outline`</button>
+  </div>
+</div>
+<script src="popup.js"></script>
