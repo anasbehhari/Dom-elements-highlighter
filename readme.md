@@ -2,18 +2,14 @@
 
 DOM Highlighter is a web extension that allows the user to outline all HTML elements of a specific web page, which give a nice looking Design to understand how a website is designed and structed using CSS and HTML, it helps beginners and advanced developers to have an idea of how things are aligned and designed in a web page.
 
-## Demo
-
-![](https://github.com/gildas-lormeau/SingleFile-Demos/blob/master/demo-sfz.gif)
 
 
 ## Download
 
-DOM Highlighter is available on Firefox, Chrome and Microsoft Edge. You can download the extension here:
+DOM Highlighter is available on Firefox  and Microsoft Edge. You can download the extension here:
 
-- Firefox: https://addons.mozilla.org/firefox/addon/singlefilez
-- Microsoft Edge: https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk
-- Chrome: https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg
+- Firefox: https://addons.mozilla.org/en-US/firefox/addon/dom-highlighter/
+- Microsoft Edge:https://github.com/anasbehhari/Dom-elements-highlighter/issues
 
 To open saved pages from the filesystem in a Chromium-based browser, SingleFileZ must be installed and the option "Allow access to file URLs" must be enabled in the details page of the extension (e.g. chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg). Otherwise, the browser must be started with the switch --allow-file-access-from-files.
 
