@@ -1,4 +1,8 @@
-# DOM Highlighter
+
+<img width="100" src="https://raw.githubusercontent.com/anasbehhari/Dom-elements-highlighter/master/icons/logo.png" />
+
+
+## DOM Highlighter
 
 DOM Highlighter is a web extension that allows the user to outline all HTML elements of a specific web page, which give a nice looking Design to understand how a website is designed and structed using CSS and HTML, it helps beginners and advanced developers to have an idea of how things are aligned and designed in a web page.
 
